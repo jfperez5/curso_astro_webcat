@@ -1,14 +1,23 @@
 <header class="flex justify-between lg:justify-start items-center">
-  <div class="logo p-2">
-      <img class="w-full" src="/img/logo.png" alt="Logo Super Mario 3D Worlds">
+  <div class="logo p-2 w-1/6">
+      <img src="/img/logo.png" width="100" alt="Logo Super Mario 3D Worlds">
   </div>
-  <nav class="link text-white ">
-      <ul class="mx-4 flex gap-4">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Play Together</a></li>
-        <li><a href="#">Explore</a></li>
-        <li><a href="#">Browser Fury</a></li>
-        <li><a href="#">Buy Now</a></li>
+  <nav class="link text-white lg:block hidden w-1/6 md:w-4/6">
+      <ul class="menu flex items-center justify-center gap-5">
+        <li><a href="#" class="link">Home</a></li>
+        <li><a href="#" class="link">Play Together</a></li>
+        <li><a href="#" class="link">Explore</a></li>
+        <li><a href="#" class="border-4 border-yellow-400 font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Browser Fury</a></li>
+        <li><a href="#" class="border-4 border-red-500 font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Buy Now</a></li>
+      </ul>
+    </nav>
+    <nav class="block text-white lg:hidden w-1/6 lg:w-4/6">
+      <ul class="menu flex items-center justify-center gap-5">
+        <li><a href="#" class="link">Home</a></li>
+        <li><a href="#" class="link">Play Together</a></li>
+        <li><a href="#" class="link">Explore</a></li>
+        <li><a href="#" class="border-4 border-yellow-400 font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Browser Fury</a></li>
+        <li><a href="#" class="border-4 border-red-500 font-bold px-4 py-3 rounded-full hover:bg-white hover:text-black transition duration-500">Buy Now</a></li>
       </ul>
     </nav>
 </header>
