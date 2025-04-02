@@ -1,8 +1,9 @@
 ---
 	import '@/styles/global.css';
+	import Navbar from '../components/landing/Navbar.astro';
 ---
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -10,16 +11,10 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Super Mario 3D Worlds</title>
 	</head>
-	<body>
+	<body class="min-w-[436px]">
+		<Navbar/>
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+

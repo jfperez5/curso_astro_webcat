@@ -1,27 +1,42 @@
-<header class="flex justify-between lg:justify-start items-center">
-  <div class="logo p-2 w-1/6">
-      <img src="/img/logo.png" width="100" alt="Logo Super Mario 3D Worlds">
+<header class="bg-gray-800">
+  <div class="flex items-center justify-between lg:justify-start">
+      <div class="logo p-2 w-1/6">
+        <img src="/img/logo.png" width="100" alt="Logo Super Mario 3D Worlds">
+      </div>
+      <nav class="links hidden lg:block w-1/6 md:w-4/6">
+          <ul class="menu flex items-center justify-center gap-5">
+              <li><a href="#" class="link">Home</a></li>
+              <li><a href="#" class="link">Play Together</a></li>
+              <li><a href="#" class="link">Explore</a></li>
+              <li><a href="#" class="border-3 border-yellow-400 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Browser Fury</a></li>
+              <li><a href="#" class="bg-red-500 text-white font-bold px-4 p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Buy Now</a></li>
+          </ul>
+      </nav>
+      <nav class="block lg:hidden w-1/6 lg:w-4/6">
+          <a href="#" class="link w-full cursor-pointer" id="mobile-menu">Menu</a>
+          <ul class="mobile-links hidden w-full absolute z-50 left-0 text-center bg-gray-800 ">
+              <li><a href="#" class="link">Home</a></li>
+              <li><a href="#" class="link">Play Together</a></li>
+              <li><a href="#" class="link">Explore</a></li>
+              <li><a href="#" class="my-4 inline-block border-3 border-yellow-400 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Browser Fury</a></li>
+              <li><a href="#" class="my-4 inline-block bg-red-500 text-white font-bold px-4 p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Buy Now</a></li>
+          </ul>
+      </nav>
   </div>
-  <nav class="link text-white lg:block hidden w-1/6 md:w-4/6">
-      <ul class="menu flex items-center justify-center gap-5">
-        <li><a href="#" class="link">Home</a></li>
-        <li><a href="#" class="link">Play Together</a></li>
-        <li><a href="#" class="link">Explore</a></li>
-        <li><a href="#" class="border-4 border-yellow-400 font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Browser Fury</a></li>
-        <li><a href="#" class="border-4 border-red-500 font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Buy Now</a></li>
-      </ul>
-    </nav>
-    <nav class="block text-white lg:hidden w-1/6 lg:w-4/6">
-      <ul class="menu flex items-center justify-center gap-5">
-        <li><a href="#" class="link">Home</a></li>
-        <li><a href="#" class="link">Play Together</a></li>
-        <li><a href="#" class="link">Explore</a></li>
-        <li><a href="#" class="border-4 border-yellow-400 font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500">Browser Fury</a></li>
-        <li><a href="#" class="border-4 border-red-500 font-bold px-4 py-3 rounded-full hover:bg-white hover:text-black transition duration-500">Buy Now</a></li>
-      </ul>
-    </nav>
 </header>
 
-
+<style>
+   @reference "@/styles/global.css";
+  .link{
+      @apply text-white block p-5 font-bold hover:text-yellow-500
+  }
+</style>
+<script>
+   const menuButton = document.querySelector('#mobile-menu');
+      menuButton.addEventListener('click', e =>{
+        const menu = document.querySelector('.mobile-links');
+      menu.classList.toggle('hidden');
+   });
+</script>
 <!-- https://images.pexels.com/photos/136399/pexels-photo-136399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
 
