@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+    --breakpoint-xsm: 320px;
+    /* --color-pattern-character-red:"url('/public/img/pattern-characters-red.png')" */
+  }
